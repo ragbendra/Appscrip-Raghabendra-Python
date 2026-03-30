@@ -8,7 +8,7 @@ class Settings(BaseSettings):
 
     CACHE_TTL_SECONDS: int = 300 # 5 minute cache
 
-    class config:
+    class Config:
         env_file = ".env"
 
 settings = Settings()
