@@ -1,6 +1,6 @@
 from pydantic_settings import BaseSettings
 
-class settings(BaseSettings):
+class Settings(BaseSettings):
     GEMINI_API_KEY: str
     API_SECRET_KEY: str
     TOKEN_BUCKET_CAPACITY: int = 10
