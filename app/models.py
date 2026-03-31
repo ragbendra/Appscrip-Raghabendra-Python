@@ -1,12 +1,9 @@
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel
 from datetime import datetime
-from typing import Optional
-import re
 
 class TradeAnalysisResponse(BaseModel):
     sector: str
     generated_at: datetime
-    cached: bool
     report: str
 
 class SessionInfo(BaseModel):
