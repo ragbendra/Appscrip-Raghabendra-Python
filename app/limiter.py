@@ -38,11 +38,11 @@ class SimpleTokenBucket:
         # check if request can be allowed
         if bucket["tokens"] >= 1:
             bucket["tokens"] -= 1
-            return True, 0.0          # <-- Return 0 wait time if allowed
+            return True, 0.0          # Return 0 wait time if allowed
         else:
             deficit = 1 - bucket["tokens"]
             retry_after = deficit / self.refill_rate
-            return False, round(retry_after, 2) # <-- Return wait time if denied
+            return False, round(retry_after, 2) # Return wait time if denied
 
 # Initialize it using your settings so other files can import it
 token_bucket = SimpleTokenBucket(
