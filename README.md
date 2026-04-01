@@ -18,7 +18,7 @@ A FastAPI service that analyzes market data and provides trade opportunity insig
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Appscrip-Raghabendra_Python.git
+git clone https://github.com/ragbendra/Appscrip-Raghabendra_Python.git
 cd Appscrip-Raghabendra_Python
 ```
 
